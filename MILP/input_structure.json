@@ -1,0 +1,86 @@
+{
+  "times": [
+    480,
+    485,
+    490
+  ],
+  "stocks": [
+    {
+      "id": "F1",
+      "kind": "Flexible",
+      "capacity": 40,
+      "original_departure": 480
+    },
+    {
+      "id": "R1",
+      "kind": "Restricted",
+      "capacity": 30,
+      "route": 1,
+      "arrival": 482,
+      "original_departure": 485
+    }
+  ],
+  "groups": [
+    {
+      "id": 0,
+      "route": 1,
+      "destination": "A",
+      "weight": 12,
+      "enter": 475,
+      "leave": 505,
+      "original_departure": 480,
+      "original_arrival": 500
+    },
+    {
+      "id": 1,
+      "route": 1,
+      "destination": "B",
+      "weight": 20,
+      "enter": 480,
+      "leave": 510,
+      "original_departure": 485,
+      "original_arrival": 525
+    },
+    {
+      "id": 2,
+      "route": 0,
+      "destination": "A",
+      "weight": 5,
+      "enter": 478,
+      "leave": 500,
+      "original_departure": 492,
+      "original_arrival": null
+    }
+  ],
+  "plans": [
+    {
+      "route": 1,
+      "id": 1,
+      "arrival": {
+        "A": 10,
+        "B": 25
+      },
+      "departure": {
+        "A": 12,
+        "B": 27
+      }
+    },
+    {
+      "route": 1,
+      "id": 2,
+      "arrival": {
+        "B": 20
+      },
+      "departure": {
+        "B": 22
+      }
+    }
+  ],
+  "settings": {
+    "headway": 5,
+    "crowd_limit": 100,
+    "service_weight": 1,
+    "waiting_weight": 0.001,
+    "delay_weight": 1e-05
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "times": [0, 5, 10],
+  "stocks": [
+    {"id": "F1", "kind": "Flexible", "capacity": "1", "original_departure": 0}
+  ],
+  "groups": [
+    {"id": 0, "route": 1, "destination": "S", "weight": "1", "enter": 0, "leave": 20, "original_departure": 5, "original_arrival": 15},
+    {"id": 1, "route": 1, "destination": "S", "weight": "1", "enter": 5, "leave": 20, "original_departure": 5, "original_arrival": 15}
+  ],
+  "plans": [
+    {"route": 1, "id": 1, "arrival": {"S": "10"}, "departure": {"S": "15"}}
+  ],
+  "settings": {"headway": 5, "crowd_limit": 10, "service_weight": 1, "waiting_weight": "0.001", "delay_weight": "0.00001"}
+}

@@ -1,0 +1,102 @@
+{
+  "groups": [
+    {
+      "index": 0,
+      "route": 1,
+      "demand": 12,
+      "arrival_time": 475,
+      "desired_departure_time": 480,
+      "destination": "A",
+      "leaving_time": 505,
+      "original_destination_arrival": 500
+    },
+    {
+      "index": 1,
+      "route": 1,
+      "demand": 20,
+      "arrival_time": 480,
+      "desired_departure_time": 485,
+      "destination": "B",
+      "leaving_time": 510,
+      "original_destination_arrival": 525
+    },
+    {
+      "index": 2,
+      "route": 0,
+      "demand": 5,
+      "arrival_time": 478,
+      "desired_departure_time": 492
+    }
+  ],
+  "stocks": [
+    {
+      "index": 0,
+      "kind": "flexible",
+      "capacity": 40,
+      "original_departure_time": 480
+    },
+    {
+      "index": 1,
+      "kind": "restricted",
+      "capacity": 30,
+      "original_departure_time": 485,
+      "original_route": 1,
+      "arrival_time": 482
+    }
+  ],
+  "plans": [
+    {
+      "route": 1,
+      "name": "P1",
+      "stops": [
+        {
+          "station": "A",
+          "travel_time": 10,
+          "dwell_time": 2
+        },
+        {
+          "station": "B",
+          "travel_time": 25,
+          "dwell_time": 2
+        }
+      ]
+    },
+    {
+      "route": 1,
+      "name": "P2",
+      "stops": [
+        {
+          "station": "B",
+          "travel_time": 20,
+          "dwell_time": 2
+        }
+      ]
+    }
+  ],
+  "route_destinations": {
+    "1": [
+      "A",
+      "B"
+    ]
+  },
+  "parameters": {
+    "start_time": 480,
+    "end_time": 490,
+    "step": 5,
+    "initial_last_departure": 475,
+    "min_headway": 5,
+    "crowding_threshold": 100,
+    "headway_penalty": 1.0,
+    "weights": {
+      "alpha1": -1.0,
+      "alpha2": -1.0,
+      "alpha3": 1.0,
+      "alpha4": -0.01,
+      "alpha5": -0.01,
+      "alpha6": -1.0,
+      "beta1": 0.01,
+      "beta2": 0.01,
+      "beta3": 0.01
+    }
+  }
+}
